@@ -238,9 +238,10 @@
         document.getElementById('current-year').textContent = new Date().getFullYear();
         
         // Define the domain and API endpoint for your site
+        // Use the original domain name for API requests (not capitalized)
         const domain = 'bizradiuscore.com';
         // Always use the production API endpoint
-        const apiEndpoint = 'https://api.localrank.so/citations/directory-urls/';
+        let apiEndpoint = 'https://api.localrank.so/citations/directory-urls/';
         
         // Pagination state
         let currentPage = 1;
